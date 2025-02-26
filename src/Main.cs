@@ -21,7 +21,7 @@ namespace SFSBuildGridUtils
         public override Dictionary<string, string> Dependencies { get; } = new() { { "UITools", "1.0" } };
 
         public override Action LoadKeybindings => BGU_Keybindings.LoadKeybindings;
-        public Dictionary<string, FilePath> UpdatableFiles => new() { { "https://github.com/Neptune-Sky/SFSBuildGridUtils/releases/latest/download/BuildBGUtils.dll", new FolderPath(ModFolder).ExtendToFile("BuildBGUtils.dll") } };
+        public Dictionary<string, FilePath> UpdatableFiles => new() { { "https://github.com/Neptune-Sky/SFSBuildGridUtils/releases/latest/download/BuildGridUtils.dll", new FolderPath(ModFolder).ExtendToFile("BuildBGUtils.dll") } };
 
         private static Harmony patcher;
 

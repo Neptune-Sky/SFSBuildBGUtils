@@ -9,7 +9,7 @@
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>SFSBuildGridUtils</RootNamespace>
-        <AssemblyName>BuildBGUtils</AssemblyName>
+        <AssemblyName>BuildGridUtils</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <LangVersion>default</LangVersion>

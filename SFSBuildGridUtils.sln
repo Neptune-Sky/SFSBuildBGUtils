@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SFSBuildBGUtils", "SFSBuildBGUtils.csproj", "{B95B9CF1-6AC4-468E-B5A7-759422AFA433}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SFSBuildGridUtils", "SFSBuildGridUtils.csproj", "{B95B9CF1-6AC4-468E-B5A7-759422AFA433}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

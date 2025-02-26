@@ -4,7 +4,7 @@ using UnityEngine;
 using static SFS.Input.KeybindingsPC;
 // ReSharper disable MemberCanBePrivate.Global
 
-namespace SFSBuildBGUtils
+namespace SFSBuildGridUtils
 {
     public class DefaultKeys
     {

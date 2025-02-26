@@ -6,7 +6,7 @@ using UnityEngine.Events;
 using System.Text.RegularExpressions;
 using Button = SFS.UI.ModGUI.Button;
 
-namespace SFSBuildBGUtils
+namespace SFSBuildGridUtils
 {
     public class NumberInput
     {

@@ -4,7 +4,7 @@ using SFS.IO;
 using UITools;
 using UnityEngine;
 
-namespace SFSBuildBGUtils
+namespace SFSBuildGridUtils
 {
     public class Config : ModSettings<Config.SettingsData>
     {

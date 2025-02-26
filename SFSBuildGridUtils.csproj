@@ -8,7 +8,7 @@
         <ProjectGuid>{B95B9CF1-6AC4-468E-B5A7-759422AFA433}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>SFSBuildBGUtils</RootNamespace>
+        <RootNamespace>SFSBuildGridUtils</RootNamespace>
         <AssemblyName>BuildBGUtils</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>

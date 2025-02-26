@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using HarmonyLib;
 using JetBrains.Annotations;
 using ModLoader;
 using ModLoader.Helpers;
-using SFS.Input;
 using SFS.IO;
-using SFS.UI;
 using UITools;
 
 namespace SFSBuildBGUtils
@@ -15,16 +12,16 @@ namespace SFSBuildBGUtils
     [UsedImplicitly]
     public class Main : Mod, IUpdatable
     {
-        public override string ModNameID => "BuildSettings";
-        public override string DisplayName => "Build Settings";
-        public override string Author => "StarMods";
+        public override string ModNameID => "BuildBGUtils";
+        public override string DisplayName => "Build BG Utils";
+        public override string Author => "NeptuneSky";
         public override string MinimumGameVersionNecessary => "1.5.10.2";
-        public override string ModVersion => "v2.1.5.1";
-        public override string Description => "Build settings window and various changes to build mode. See the GitHub repository for a full list of features.";
+        public override string ModVersion => "v1.0";
+        public override string Description => "A simple menu for editing the build screen's background.";
         public override Dictionary<string, string> Dependencies { get; } = new() { { "UITools", "1.0" } };
 
         public override Action LoadKeybindings => BGU_Keybindings.LoadKeybindings;
-        public Dictionary<string, FilePath> UpdatableFiles => new() { { "https://github.com/Neptune-Sky/SFSBuildSettings/releases/latest/download/BuildSettings.dll", new FolderPath(ModFolder).ExtendToFile("BuildSettings.dll") } };
+        public Dictionary<string, FilePath> UpdatableFiles => new() { { "https://github.com/Neptune-Sky/SFSBuildBGUtils/releases/latest/download/BuildBGUtils.dll", new FolderPath(ModFolder).ExtendToFile("BuildBGUtils.dll") } };
 
         private static Harmony patcher;
 
@@ -46,8 +43,7 @@ namespace SFSBuildBGUtils
             Config.Setup();
             SceneHelper.OnBuildSceneLoaded += () =>
             {
-                GUI.Setup();
-                SkinUnlocker.Initialize();
+                Functionality.Setup();
             };
         }
     }

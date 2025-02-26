@@ -1,10 +1,5 @@
-using HarmonyLib;
 using ModLoader;
 using ModLoader.Helpers;
-using SFS;
-using SFS.Audio;
-using SFS.UI;
-using SFS.World;
 using UnityEngine;
 using static SFS.Input.KeybindingsPC;
 // ReSharper disable MemberCanBePrivate.Global
@@ -34,7 +29,7 @@ namespace SFSBuildBGUtils
 
         private static void OnBuildLoad()
         {
-            AddOnKeyDown_Build(main.ShowMenu, () => GUI.CustomRotate(true));
+            AddOnKeyDown_Build(main.ShowMenu, Functionality.OpenMenu);
         }
 
         public override void CreateUI()

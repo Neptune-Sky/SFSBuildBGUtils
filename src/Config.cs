@@ -24,6 +24,7 @@ namespace SFSBuildGridUtils
         {
             public bool hideGrid;
             public Color backgroundColor = new(0.2229f, 0.3487f, 0.55f, 1f);
+            public Vector2Int gridSize = new(20, 100);
         }
 
         protected override void RegisterOnVariableChange(Action onChange)

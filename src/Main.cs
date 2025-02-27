@@ -12,12 +12,12 @@ namespace SFSBuildGridUtils
     [UsedImplicitly]
     public class Main : Mod, IUpdatable
     {
-        public override string ModNameID => "BuildBGUtils";
-        public override string DisplayName => "Build BG Utils";
+        public override string ModNameID => "BuildGridUtils";
+        public override string DisplayName => "Build Grid Utils";
         public override string Author => "NeptuneSky";
         public override string MinimumGameVersionNecessary => "1.5.10.2";
-        public override string ModVersion => "v1.0";
-        public override string Description => "A simple menu for editing the build screen's background.";
+        public override string ModVersion => "v1.1";
+        public override string Description => "A simple menu for editing the build grid.";
         public override Dictionary<string, string> Dependencies { get; } = new() { { "UITools", "1.0" } };
 
         public override Action LoadKeybindings => BGU_Keybindings.LoadKeybindings;
